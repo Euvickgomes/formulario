@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro Formulário</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Formulário Teste</h1>
+    </header>
+    <hr>
+    <main>
+        <form action="acao.html" method="post" enctype="multipart/form-data">
+            <label>Nome</label>
+            <input type="text" name="name" id="name" required>
+            <br>
+            <label>Senha</label>
+            <input type="password" name="password" id="password" required> 
+            <br>
+            <label>Insira sua Imagem</label>
+            <input type="file" name="file" id="file" accept=".png, .jpn, .jpeg" multiple>
+            <br>
+            <label>Selecione sua opção</label>
+            <input type="radio" name="option1" id="option1" value="1" checked>Feminino
+            <input type="radio" name="option1" id="option1" value="2">Masculino
+            <br>
+            <label>Selecione suas disciplinas</label>
+            <input type="checkbox" name="math" id="math" checked>Matemática
+            <input type="checkbox" name="bio" id="bio">Biologia
+            <input type="checkbox" name="geo" id="geo">Geografia
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+</body>
+</html>
